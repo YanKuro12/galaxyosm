@@ -6,9 +6,9 @@ const fs = require('fs');
 
 // Add these options to your httpsOptions object
 const httpsOptions = {
-    key: fs.readFileSync(path.join(__dirname, 'certs', '_.growplus.asia', 'cdn.growplus.asia-key.pem')),
-    cert: fs.readFileSync(path.join(__dirname, 'certs', '_.growplus.asia', 'cdn.growplus.asia-crt.pem')),
-    ca: fs.readFileSync(path.join(__dirname, 'certs', '_.growplus.asia', 'cdn.growplus.asia-chain.pem')),
+    key: fs.readFileSync(path.join(__dirname, 'certs', 'cdngtps.my.id-key.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'certs', 'cdngtps.my.id-crt.pem')),
+    ca: fs.readFileSync(path.join(__dirname, 'certs', 'cdngtps.my.id-chain.pem')),
     // Add these timeout settings
     requestTimeout: 120000, // 2 minutes
     keepAliveTimeout: 60000 // 1 minute
